@@ -46,5 +46,10 @@
         player.stopVideo();
       }
     </script>
+    <script>
+      const shareButton = document.getElementsByClassName('ytp-share-button');
+      const playerShare = shareButton[0].parentElement;
+      playerShare.removeChild(shareButton[0]);
+    </script>
   </body>
 </html>
